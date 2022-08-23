@@ -7,5 +7,12 @@ const DATA = [
 ];
 
 // Escribe el código necesario aquí
+ function crearparrafo(text){
+  let container = document.getElementById('container');
+  container.innerHTML =+ "<p>"+ text +"</p>";
+ }
 
+ for( let persona of DATA){
+  crearparrafo(persona.name+ " " + persona.lastname);
+ }
 //
